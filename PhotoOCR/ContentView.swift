@@ -6,16 +6,40 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView {
+            CameraView()
+                .tabItem {
+                    Label("Camera", systemImage: "camera.fill")
+                }
+                .toolbarBackground(.visible, for: .tabBar)
+                .toolbarBackground(.ultraThinMaterial, for: .tabBar)
+            
+            SavedPhotosView()
+                .tabItem {
+                    Label("Gallery", systemImage: "photo.stack.fill")
+                }
+                .toolbarBackground(.visible, for: .tabBar)
+                .toolbarBackground(.ultraThinMaterial, for: .tabBar)
+            
+            ReceiptScannerView()
+                .tabItem {
+                    Label("Receipts", systemImage: "receipt.fill")
+                }
+                .toolbarBackground(.visible, for: .tabBar)
+                .toolbarBackground(.ultraThinMaterial, for: .tabBar)
+            
+            OCRHistoryView()
+                .tabItem {
+                    Label("OCR History", systemImage: "text.viewfinder")
+                }
+                .toolbarBackground(.visible, for: .tabBar)
+                .toolbarBackground(.ultraThinMaterial, for: .tabBar)
         }
-        .padding()
+        .tint(.blue)
     }
 }
 

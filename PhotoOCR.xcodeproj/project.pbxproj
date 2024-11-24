@@ -10,9 +10,22 @@
 		FA7527E72CF2FCC100747B4D /* PhotoOCR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoOCR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		FA7527FD2CF3000000747B4D /* Exceptions for "PhotoOCR" folder in "PhotoOCR" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = FA7527E62CF2FCC100747B4D /* PhotoOCR */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		FA7527E92CF2FCC100747B4D /* PhotoOCR */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				FA7527FD2CF3000000747B4D /* Exceptions for "PhotoOCR" folder in "PhotoOCR" target */,
+			);
 			path = PhotoOCR;
 			sourceTree = "<group>";
 		};
@@ -252,8 +265,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PhotoOCR/Preview Content\"";
+				DEVELOPMENT_TEAM = Y9744R72XE;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PhotoOCR/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Need to use the camera";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -280,8 +296,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PhotoOCR/Preview Content\"";
+				DEVELOPMENT_TEAM = Y9744R72XE;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PhotoOCR/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Need to use the camera";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
